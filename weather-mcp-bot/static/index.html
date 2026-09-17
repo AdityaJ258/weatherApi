@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SkyBot · Weather Chat</title>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <span class="brand-icon">⛅</span>
+        <div>
+          <h1>SkyBot</h1>
+          <p>Ask me the weather or temperature, anywhere on Earth</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="chat" class="chat"></main>
+
+    <form id="chat-form" class="composer">
+      <input
+        id="chat-input"
+        type="text"
+        placeholder="e.g. What's the weather in Tokyo?"
+        autocomplete="off"
+        maxlength="500"
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/static/chat.js"></script>
+</body>
+</html>
